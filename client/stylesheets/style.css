@@ -7,25 +7,31 @@
   border-radius: 3px;
   padding: 10px;
   margin-bottom: 10px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+}
 
 body {
-  background: #eee;
+  background: #fff;
   color: #666666; 
   font-family: "grad",serif;
 }
 
 .navbar {
-  margin-bottom: 10px; }
+  margin-bottom: 10px; 
+
+}
+
+.navbar-default {
+  
+  background-color: #fff;
+
+}
+
   /* line 32, ../sass/style.scss */
   .navbar .navbar-inner {
-    -webkit-border-radius: 0px 0px 3px 3px;
-    -moz-border-radius: 0px 0px 3px 3px;
-    -ms-border-radius: 0px 0px 3px 3px;
-    -o-border-radius: 0px 0px 3px 3px;
-    border-radius: 0px 0px 3px 3px; }
+
+
+  }
 
 #spinner {
   height: 300px; }
