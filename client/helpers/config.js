@@ -1,3 +1,8 @@
-Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_ONLY'
+Meteor.startup(function() {
+AccountsEntry.config({
+homeRoute: '/',
+dashboardRoute: '/new',
+passwordSignupFields: 'EMAIL_ONLY',
+showSignupCode: true,
+});
 });
