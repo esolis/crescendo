@@ -1,0 +1,398 @@
+@import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";
+@import "includes/variables";
+@import "includes/mixins";
+
+.grid-block, .main, .post, .comments li, .comment-form {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+body {
+  background: #fff;
+  color: #666666; 
+  font-family: $font-stack;
+}
+
+.navbar {
+  margin-bottom: 10px; 
+
+}
+
+.navbar-default {
+  
+  background-color: #fff;
+
+}
+
+  /* line 32, ../sass/style.scss */
+  .navbar .navbar-inner {
+
+
+  }
+
+#spinner {
+  height: 300px; }
+
+.post {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; }
+  .post:before, .post:after {
+    content: "";
+    display: table; }
+  .post:after {
+    clear: both; }
+  .post.invisible {
+    opacity: 0; }
+  .post.instant {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .post.animate{
+    -webkit-transition: all 300ms 0ms;
+    -webkit-transition-delay: ease-in;
+    -moz-transition: all 300ms 0ms ease-in;
+    -o-transition: all 300ms 0ms ease-in;
+    transition: all 300ms 0ms ease-in; }
+
+    .post .post-content h3 {
+      margin: 0;
+      line-height: 1.4;
+      font-size: 18px; }
+      .post .post-content h3 a {
+        display: inline-block;
+        margin-right: 5px; }
+      .post .post-content h3 span {
+        font-weight: normal;
+        font-size: 14px;
+        display: inline-block;
+        color: #aaaaaa; }
+    .post .post-content p {
+      margin: 0; }
+  .post .discuss {
+    display: block;
+    float: right;
+    margin-top: 7px; }
+
+.comments {
+  list-style-type: none;
+  margin: 0; }
+  .comments li h4 {
+    font-size: 16px;
+    margin: 0; }
+    .comments li h4 .date {
+      font-size: 12px;
+      font-weight: normal; }
+    .comments li h4 a {
+      font-size: 12px; }
+  .comments li p:last-child {
+    margin-bottom: 0; }
+
+.dropdown-menu span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 20px;
+  color: #bbb;
+  white-space: nowrap; }
+
+.posts .spinner-container{
+  position: relative;
+  height: 100px;
+}
+
+.jumbotron{
+  text-align: center;
+}
+.jumbotron h2{
+  font-size: 60px;
+  font-weight: 100;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.errors{
+  position: fixed;
+  z-index: 10000;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+.alert {
+          animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  width: 250px;
+  float: right;
+  clear: both;
+  margin-bottom: 5px;
+  pointer-events: auto;
+}
+
+// *********************************
+// Layout
+// *********************************
+
+.page-wrap {
+  width: 90%;
+  max-width: 1350px;
+  overflow-x: hidden;
+  margin: 0 auto 40px;
+  position: relative;
+
+}
+
+.main-form {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+
+// *********************************
+// Header
+// *********************************
+
+.top {
+  margin-bottom: 1em;
+  padding: 2em 2em 0 2em;
+}
+
+.top-header {
+
+  .branding {
+    display: inline-block;
+  }
+
+  h1 {
+    font-style: italic;
+    font-family: $font-stack;
+  }
+
+  .submit {
+    float: right;
+    margin-top: 2em;
+  }
+}
+
+
+.bottom-header{
+  position: relative;
+  height: 3em;
+
+}
+
+.main-nav {
+  display: inline-block;
+  float: left;
+
+  ul {
+    margin-left: 0;
+  }
+
+  a {
+    font-style: italic;
+    color: $main-black;
+  }
+
+  .active {
+    font-weight: 700;
+  }
+}
+
+.user-section {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+
+  li {
+    list-style: none;
+  }
+
+
+}
+
+ul.inline-items li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+// *********************************
+// Signup Dropdown
+// *********************************
+
+.user-section {
+
+  .dropdown-menu {
+    position: relative;
+    left: 80px;
+    margin-top: 2em;
+
+  }
+}
+
+#login-buttons-password {
+  display: inline-block;
+  float: left;
+}
+
+#login-other-options {
+  display: inline-block;
+  float: right;
+}
+
+// *********************************
+// Post
+// *********************************
+
+.post {
+
+   -webkit-transition: all 100ms 0ms;
+    -moz-transition: all 100ms 0ms ease-in;
+    -o-transition: all 100ms 0ms ease-in;
+    transition: all 100ms 0ms ease-in; 
+
+  &:hover {
+      background-color: #fafafa; 
+  }
+
+  .votes {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-right: 1em;
+    border-right: 1px solid #cccccc;
+    width: 4em;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+
+    .upvote {
+      position: relative;
+      bottom: .2em;
+      width: 0px;
+      height: 0px;
+      font-size: 1.5em;
+      color: #5e5e5e;
+
+      &.disabled {
+        color: #D7D7D7;
+      }
+
+    }
+
+    .tally {
+      display: block;
+      position: relative;
+      bottom: .2em;
+    }
+    
+  }
+
+  .post-content {
+    display: inline-block;
+    float: left;
+
+    .post-title {
+
+      a {
+        font-size: 1.25em;
+        font-weight: 400;
+        color: #363636;
+        margin-right: .25em;
+      }
+
+      .source-url {
+        color: #9a9a9a;
+      }
+    }
+
+
+
+    .post-meta {
+      margin-top: .25em;
+      color: #9a9a9a;
+      font-style: italic;
+      font-weight: 400;
+
+      .author, .comment-count {
+        font-weight: 400;
+        color: #5e5e5e;
+      }
+
+      .edit {
+        margin-left: 1em;
+      }
+    }
+
+  }
+}
+
+
+.load-more {
+  
+  background-color: $main-black;
+  font-family: $font-stack;
+  color: white;
+  text-align: center;
+  width: auto;
+  max-width: 150px;
+  padding: 6px 20px 8px;
+  text-decoration: none;
+  margin-bottom: 2em;
+  margin: 0 auto;
+  display: block;
+
+  @include border-radius(40px);
+  -webkit-transition: all 100ms 0ms;
+  -moz-transition: all 100ms 0ms ease-in;
+  -o-transition: all 100ms 0ms ease-in;
+  transition: all 100ms 0ms ease-in; 
+
+  &:hover {
+    background-color: black;
+    text-decoration: none;
+  }
+
+}
+
+// *********************************
+// Form
+// *********************************
+
+.form-group {
+  margin-bottom: 2em;
+}
+
+.control-label {
+  font-size: 1.25em;
+  margin-bottom: .5em;
+}
+
+
+

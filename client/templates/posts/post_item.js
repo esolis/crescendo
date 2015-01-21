@@ -8,7 +8,7 @@ return a.hostname;
   upvotedClass: function() {
     var userId = Meteor.userId();
     if (userId && !_.include(this.upvoters, userId)) {
-      return 'btn-primary upvotable';
+      return 'upvotable';
     } else {
       return 'disabled';
     }
