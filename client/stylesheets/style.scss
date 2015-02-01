@@ -16,9 +16,14 @@
 
 body {
   background: #fff;
-  color: #666666; 
+  color: $main-black; 
   font-family: $font-stack;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack;
+  color: $main-black;
+} 
 
 .navbar {
   margin-bottom: 10px; 
@@ -225,6 +230,10 @@ body {
   }
 }
 
+// *********************************
+// Signup/Reg Section
+// *********************************
+
 .user-section {
   display: inline-block;
   position: absolute;
@@ -232,6 +241,22 @@ body {
 
   li {
     list-style: none;
+    display: inline-block;
+    margin-left: 1em;
+
+    a {
+      color: $normal-grey;
+
+      -webkit-transition: all 100ms 0ms;
+      -moz-transition: all 100ms 0ms ease-in;
+      -o-transition: all 100ms 0ms ease-in;
+      transition: all 100ms 0ms ease-in; 
+
+
+      &:hover {
+        color: $main-black;
+      }
+    }
   }
 
 
@@ -242,29 +267,6 @@ ul.inline-items li {
   margin-right: 1em;
 }
 
-// *********************************
-// Signup Dropdown
-// *********************************
-
-.user-section {
-
-  .dropdown-menu {
-    position: relative;
-    left: 80px;
-    margin-top: 2em;
-
-  }
-}
-
-#login-buttons-password {
-  display: inline-block;
-  float: left;
-}
-
-#login-other-options {
-  display: inline-block;
-  float: right;
-}
 
 // *********************************
 // Post
@@ -395,4 +397,11 @@ ul.inline-items li {
 }
 
 
+// *********************************
+// Button Override
+// *********************************
+
+button, .button {
+  font-family: $font-stack;
+}
 
